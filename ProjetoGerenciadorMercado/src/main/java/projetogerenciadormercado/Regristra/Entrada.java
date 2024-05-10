@@ -4,10 +4,20 @@
  */
 package projetogerenciadormercado.Regristra;
 
+import java.io.Serializable;
+import java.util.Date;
+import lombok.Getter;
+import lombok.Setter;
+
 /**
  *
  * @author Luan Bressanin
  */
-public class Entrada {
-    
+@Getter
+@Setter
+public class Entrada implements Serializable{
+    private String secao;
+    private String notaFiscalAssoc;
+    private Date dataEntrada;
+
 }
